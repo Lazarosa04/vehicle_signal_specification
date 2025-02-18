@@ -1,0 +1,5 @@
+City:
+  type: branch
+  description: City data.
+
+#include City/City.vspec City

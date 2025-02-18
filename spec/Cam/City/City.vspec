@@ -1,0 +1,38 @@
+Environment:
+  type: branch
+  description: Environment data.
+
+Environment.Temperature_city:
+  type: sensor
+  datatype: float
+  description: Temperature in the city.
+  min: -40
+  max: 40
+  default: 20
+
+Environment.Humidity_city:
+  type: sensor
+  datatype: float
+  description: Humidity in the city.
+  unit: percent
+  min: 0
+  max: 100
+  default: 50
+
+Environment.Warning:
+  type: sensor
+  datatype: string
+  description: General 
+
+
+Roads:
+  type: branch
+  description: Road data.
+
+#include Roads/Roads.vspec Roads
+
+Traffic:
+  type: branch
+  description: Traffic data.
+
+#include Traffic/Traffic.vspec Traffic

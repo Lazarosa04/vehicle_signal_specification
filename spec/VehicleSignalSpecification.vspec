@@ -208,3 +208,10 @@ Vehicle.Connectivity:
 #include Vehicle/Diagnostics.vspec Vehicle
 
 #include Vehicle/MotionManagement.vspec Vehicle
+
+
+Vehicle.Cam:
+  type: branch
+  description: Cam message data.
+
+#include Cam/Cam.vspec Vehicle.Cam
