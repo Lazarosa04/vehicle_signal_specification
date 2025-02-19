@@ -1,0 +1,37 @@
+Status:
+  type: branch
+  description: Status data.
+
+Status.Closed:
+  type: sensor
+  datatype: boolean
+  description: Road is closed.
+  default: false
+
+Status.Incident:
+  type: sensor
+  datatype: boolean
+  description: Road has an incident.
+  default: false
+
+Status.Works_cam_city_den:
+  type: sensor
+  datatype: string
+  description: Cam/Den messages.
+
+Rules:
+  type: branch
+  description: Rules data.
+
+Rules.Overtaking:
+  type: sensor
+  datatype: boolean
+  description: Overtaking is allowed.
+  default: false
+
+Rules.SpeedLimit:
+  type: sensor
+  datatype: uint16
+  unit: km/h
+  description: Speed limit on the road.
+  default: 50

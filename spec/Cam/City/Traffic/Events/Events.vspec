@@ -1,0 +1,41 @@
+Events.Agent_id:
+  type: attribute
+  datatype: string
+  description: Agent ID.
+
+Close_Vehicle:
+  type: branch
+  description: Close vehicle data.
+
+Close_Vehicle.Motor_Cycle_den_cam:
+  type: sensor
+  datatype: string
+  description: den/cam messages info.
+
+Close_vehicle.Slow:
+  type: sensor
+  datatype: boolean
+  description: Vehicle is slow.
+  default: false
+
+Close_Vehicle.Emergency:
+  type: sensor
+  datatype: boolean
+  description: Vehicle is in emergency.
+  default: false
+
+Close_Vehicle.Stationary:
+  type: branch
+  description: Stationary vehicle data.
+
+Close_Vehicle.Stationary.Broken:
+  type: sensor
+  datatype: boolean
+  description: Vehicle is broken.
+  default: false
+
+Close_Vehicle.Stationary.Accident:
+  type: sensor
+  datatype: boolean
+  description: Vehicle is in accident.
+  default: false
