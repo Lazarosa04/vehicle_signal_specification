@@ -1,0 +1,43 @@
+Agents.Cars.Static.type:
+  type: sensor
+  datatype: string
+  description: Type of the car.
+
+Agents.Cars.Static.Station_type:
+  type: sensor
+  datatype: string
+  description: Station type of the car.
+
+
+Agents.Cars.Static.Dimension:
+  type: branch
+  description: Dimension data.
+
+Agents.Cars.Static.Dimension.Length:
+  type: sensor
+  datatype: float
+  description: Length of the car.
+  unit: meter
+
+Agents.Cars.Static.Dimension.Width:
+  type: sensor
+  datatype: float
+  description: Width of the car.
+  unit: meter
+
+Agents.Cars.Static.Load:
+  type: branch
+  description: Load data.
+
+
+Agents.Cars.Static.Load.type:
+  type: sensor
+  datatype: string
+  description: Type of the load.
+
+Agents.Cars.Static.Load.secial:
+  type: sensor
+  datatype: boolean
+  description: If the load is special (i.e. dangerous).
+  default: false
+  

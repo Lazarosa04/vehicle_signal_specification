@@ -1,0 +1,105 @@
+Agents.Cars.Dynamic.Space:
+  type: branch
+  description: Space data.
+
+Agents.Cars.Dynamic.Space.Posion:
+  type: sensor
+  datatype: float
+  description: Position of the car.
+  unit: meter
+
+Agents.Cars.Dynamic.Space.heading:
+  type: sensor
+  datatype: float
+  description: Heading of the car.
+  unit: degrees
+
+Agents.Cars.Dynamic.Space.Lane_position:
+  type: sensor
+  datatype: int16
+  description: Wich lane the car is on.
+
+Agents.Cars.Dynamic.Components:
+  type: branch
+  description: Components data.
+
+Agents.Cars.Dynamic.Components.Steering:
+  type: sensor
+  datatype: float
+  description: Steering angle of the car.
+  unit: degrees
+
+Agents.Cars.Dynamic.Components.Lights:
+  type: branch
+  description: Lights data.
+
+Agents.Cars.Dynamic.Components.Lights.Headlights:
+  type: sensor
+  datatype: boolean
+  description: If the headlights are on.
+  default: false
+
+Agents.Cars.Dynamic.Components.Lights.Breaks:
+  type: sensor
+  datatype: boolean
+  description: If the break lights are on.
+  default: false
+
+Agents.Cars.Dynamic.Components.Lights.Blinking:
+  type: sensor
+  datatype: boolean
+  description: If the blinkers are on.
+  default: false
+
+Agents.Cars.Dynamic.Components.Lights.Reverse:
+  type: sensor
+  datatype: boolean
+  description: If the reverse lights are on.
+  default: false
+
+Agents.Cars.Dynamic.Path:
+  type: branch
+  description: Path data.
+
+Agents.Cars.Dynamic.Path.Speed:
+  type: sensor
+  datatype: float
+  description: Speed of the car.
+  unit: m/s
+
+Agents.Cars.Dynamic.Path.PathHistory:
+  type: sensor
+  datatype: string
+  description: Path history of the car.
+
+Agents.Cars.Dynamic.Path.Curvature:
+  type: sensor
+  datatype: float
+  description: Curvature of the path.
+  unit: degrees
+
+
+Agents.Cars.Dynamic.Path.Acceleration:
+  type: branch
+  description: Acceleration data.
+
+Agents.Cars.Dynamic.Path.Acceleration.Control:
+  type: sensor
+  datatype: boolean
+  description: If the acceleration is controlled.
+  default: true
+
+Agents.Cars.Dynamic.Path.Acceleration.Lateral:
+  type: sensor
+  datatype: float
+  description: Lateral acceleration of the car.
+  unit: m/s^2
+
+Agents.Cars.Dynamic.Path.Acceleration.Vertical:
+  type: sensor
+  datatype: float
+  description: Vertical acceleration of the car.
+  unit: m/s^2
+
+
+

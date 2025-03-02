@@ -1,0 +1,42 @@
+
+
+Agents.Cars.Emergency:
+  type: branch
+  description: Agents.Cars.Emergency data.
+  
+Agents.Cars.Emergency.role:
+  type: sensor
+  datatype: string
+  description: Role of the Agents.Cars.emergency vehicle.
+
+Agents.Cars.Emergency.priority:
+  type: sensor
+  datatype: boolean
+  description: If the Agents.Cars.emergency vehicle has priority.
+  default: false
+
+Agents.Cars.Emergency.lights:
+  type: sensor
+  datatype: boolean
+  description: If the Agents.Cars.emergency vehicle has light on.
+  default: false
+
+Agents.Cars.Passenger:
+  type: branch
+  description: Agents.Cars.Passenger data.
+
+Agents.Cars.Passenger.Embarking:
+  type: sensor
+  datatype: boolean
+  description: If there is a passenger embarking.
+  default: false
+
+Agents.Cars.Static:
+  type: branch
+  description: Agents.Cars.Static data.
+  #include  Static.vspec
+
+Agents.Cars.Dynamic:
+  type: branch
+  description: Agents.Cars.Dynamic data.
+  #include  Dynamic.vspec

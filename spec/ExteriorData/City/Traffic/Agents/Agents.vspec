@@ -1,0 +1,23 @@
+Agents.id:
+  type: attribute
+  datatype: string
+  description: Agent ID.
+
+Agents.Traffic_lights:
+  type: branch
+  description: Traffic lights data.
+
+Agents.Traffic_lights.activated:
+  type: sensor
+  datatype: boolean
+  description: Traffic light is activated.
+  default: false
+
+Agents.Cars:
+  type: branch
+  description: Cars data.
+  #include Cars/Cars.vspec
+
+
+
+
