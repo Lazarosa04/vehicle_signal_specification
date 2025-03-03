@@ -1,5 +1,5 @@
 import yaml
-import sys
+
 
 def read_yaml(file_path):
     """Read and load a YAML file."""
